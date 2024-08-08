@@ -11,10 +11,7 @@ public class MoveZero{
         while(count < nums.length)
             arr[count++] = 0;
         
-        for(int i = 0; i < nums.length; i++) {
-            nums[i] = arr[i];
-        }
-
+        System.arraycopy(arr, 0, nums, 0, nums.length);
     }
 
 }
